@@ -4,4 +4,6 @@
 .App {
   margin: 0 auto;
   color: white;
+  display: flex;
+  width: 800px;
 }

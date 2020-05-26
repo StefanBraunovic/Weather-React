@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-const Vrijeme = (props) => {
+const Vrijeme = ({ temp, condition }) => {
   const State = styled.h3`
     font-family: "Merriweather", sans-serif;
     font-size: 1.2rem;
@@ -14,8 +14,8 @@ const Vrijeme = (props) => {
 
   return (
     <>
-      <Temp>20 °C</Temp>
-      <State className="condition">Suncano</State>
+      <Temp>{temp}°C</Temp>
+      <State>{condition}</State>
     </>
   );
 };
